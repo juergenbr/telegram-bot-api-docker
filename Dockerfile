@@ -17,5 +17,5 @@ RUN rm -rf build
 RUN mkdir build
 WORKDIR build
 RUN export CXXFLAGS=""
-RUN cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=.. ..
+RUN cmake -DCMAKE_BUILD_TYPE=Release ..
 RUN cmake --build . --target install
